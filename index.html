@@ -1,0 +1,833 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaison Kumar J | Portfolio & Interactive Resume</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Professional portfolio and interactive resume of Jaison Kumar J, an Information Technology Engineer, UI/UX Designer, and Frontend Developer specializing in React, Flutter, PHP, and Figma.">
+    <meta name="keywords" content="Jaison Kumar J, Jaison Kumar, Portfolio, Resume, UI/UX Design, Figma, React, Developer, Flutter, Dart, Web Design, Erode Sengunthar Engineering College">
+    <meta name="author" content="Jaison Kumar J">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Jaison Kumar J | Portfolio & Interactive Resume">
+    <meta property="og:description" content="Explore Jaison's projects, certifications, Figma design prototypes, and engineering portfolio.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jaisonkumar.me">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-theme">
+    
+    <!-- Floating Background Objects -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+    <div class="bg-glow bg-glow-3"></div>
+
+    <!-- Navigation Header -->
+    <header id="site-header">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-accent">&lt;</span>Jaison Kumar J<span class="logo-accent"> /&gt;</span>
+            </a>
+            
+            <nav class="nav-links-wrapper">
+                <ul class="nav-links" id="nav-links-list">
+                    <li><a href="#hero" class="nav-link active" id="nav-home">Home</a></li>
+                    <li><a href="#about" class="nav-link" id="nav-about">About</a></li>
+                    <li><a href="#skills" class="nav-link" id="nav-skills">Skills</a></li>
+                    <li><a href="#projects" class="nav-link" id="nav-projects">Projects</a></li>
+                    <li><a href="#resume" class="nav-link" id="nav-resume">Resume</a></li>
+                    <li><a href="#contact" class="nav-link" id="nav-contact">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Toggle theme" class="btn-icon">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <a href="#resume" class="btn btn-outline nav-resume-btn">
+                    <i class="fa-solid fa-file-pdf"></i> Resume
+                </a>
+                <button id="mobile-nav-toggle" aria-label="Toggle menu" class="btn-icon">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="section hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="hero-tagline">Welcome to my Digital Space</span>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Jaison Kumar J</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        I am a <span class="dynamic-txt" id="typed-text"></span>
+                    </h2>
+                    <p class="hero-description">
+                        An Information Technology student with a passion for designing elegant user interfaces and developing modern, responsive web and mobile applications. Specializing in bridging the gap between aesthetics and function.
+                    </p>
+                    
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>View My Work</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span>Get in Touch</span>
+                            <i class="fa-solid fa-comment"></i>
+                        </a>
+                    </div>
+
+                    <div class="hero-socials">
+                        <span class="socials-label">Connect with me:</span>
+                        <div class="socials-icons">
+                            <a href="https://linkedin.com/in/jaison-kumar-j" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon-link">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/JAISON-J-01178/JAISON-J-01178" target="_blank" rel="noopener" aria-label="GitHub" class="social-icon-link">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="mailto:jaisonkumar.001@gmail.com" aria-label="Email" class="social-icon-link">
+                                <i class="fa-solid fa-envelope"></i>
+                            </a>
+                            <a href="tel:+919578483173" aria-label="Phone" class="social-icon-link">
+                                <i class="fa-solid fa-phone"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-graphics">
+                    <div class="hero-card-glow"></div>
+                    <div class="hero-avatar-frame">
+                        <div class="hero-design-circle c1"></div>
+                        <div class="hero-design-circle c2"></div>
+                        <div class="hero-design-circle c3"></div>
+                        <div class="avatar-mockup">
+                            <div class="console-box">
+                                <div class="console-header">
+                                    <span class="dot red"></span>
+                                    <span class="dot yellow"></span>
+                                    <span class="dot green"></span>
+                                    <span class="console-title">developer.js</span>
+                                </div>
+                                <pre class="console-body"><code><span class="token keyword">const</span> <span class="token name">developer</span> <span class="token operator">=</span> {
+  name: <span class="token string">'Jaison Kumar J'</span>,
+  role: <span class="token string">'UI/UX & Frontend Developer'</span>,
+  education: <span class="token string">'B.Tech - IT (ESEC)'</span>,
+  skills: [
+    <span class="token string">'Figma'</span>, <span class="token string">'React'</span>, <span class="token string">'Flutter'</span>,
+    <span class="token string">'JavaScript'</span>, <span class="token string">'Dart'</span>, <span class="token string">'PHP'</span>
+  ],
+  passionateAbout: [
+    <span class="token string">'Premium UI Animations'</span>,
+    <span class="token string">'Responsive App Architectures'</span>
+  ]
+};
+
+<span class="token comment">// Let's build something awesome together!</span>
+console.log(developer.name + <span class="token string">' is active!'</span>);</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#about" class="scroll-down-indicator" aria-label="Scroll to About section">
+                <span class="mouse-icon"><span class="wheel"></span></span>
+            </a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">01. Discover</span>
+                    <h2 class="section-title">About Me</h2>
+                    <div class="title-underline"></div>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-text">
+                        <h3 class="about-subtitle">Bridging the Gap Between Design & Code</h3>
+                        <p>
+                            I am currently pursuing my <strong>B.Tech in Information Technology</strong> at <strong>Erode Sengunthar Engineering College</strong>, Perundurai (2023 - Present). Throughout my academic journey, I have developed a keen interest in creating visual narratives and digital solutions that feel premium and functional.
+                        </p>
+                        <p>
+                            My approach focuses on modern UI/UX design, using tools like <strong>Figma</strong> to craft high-fidelity interactive prototypes, then coding them into functional web applications using <strong>React/JavaScript</strong> or mobile designs via <strong>Flutter/Dart</strong>. I love playing with layout hierarchies, micro-animations, and dynamic visual states to make user interactions feel seamless.
+                        </p>
+                        <div class="about-details-list">
+                            <div class="detail-item">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                <span><strong>Degree:</strong> B.Tech - IT</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fa-solid fa-map-location-dot"></i>
+                                <span><strong>Location:</strong> Tamil Nadu, India</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span><strong>Email:</strong> jaisonkumar.001@gmail.com</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fa-solid fa-phone"></i>
+                                <span><strong>Phone:</strong> +91 9578483173</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-stats">
+                        <div class="stats-card glass-card">
+                            <div class="stat-num gradient-text">8+</div>
+                            <div class="stat-label">Core Tech Skills</div>
+                        </div>
+                        <div class="stats-card glass-card">
+                            <div class="stat-num gradient-text">7+</div>
+                            <div class="stat-label">Completed Projects</div>
+                        </div>
+                        <div class="stats-card glass-card">
+                            <div class="stat-num gradient-text">3+</div>
+                            <div class="stat-label">Figma Prototypes</div>
+                        </div>
+                        <div class="stats-card glass-card">
+                            <div class="stat-num gradient-text">7+</div>
+                            <div class="stat-label">Technical Certifications</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">02. Toolkit</span>
+                    <h2 class="section-title">Skills & Technologies</h2>
+                    <div class="title-underline"></div>
+                </div>
+                
+                <div class="skills-grid">
+                    <!-- UI/UX & Design -->
+                    <div class="skills-category-card glass-card">
+                        <div class="category-header">
+                            <div class="category-icon icon-ux"><i class="fa-solid fa-pen-nib"></i></div>
+                            <h3>UI/UX Design</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-tag-badge">Figma</div>
+                            <div class="skill-tag-badge">UI Prototyping</div>
+                            <div class="skill-tag-badge">User Research</div>
+                            <div class="skill-tag-badge">Wireframing</div>
+                            <div class="skill-tag-badge">Design Systems</div>
+                            <div class="skill-tag-badge">Interactive Animations</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Frontend Web Development -->
+                    <div class="skills-category-card glass-card">
+                        <div class="category-header">
+                            <div class="category-icon icon-frontend"><i class="fa-solid fa-code"></i></div>
+                            <h3>Frontend Web</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-tag-badge">HTML5</div>
+                            <div class="skill-tag-badge">CSS3</div>
+                            <div class="skill-tag-badge">JavaScript (ES6+)</div>
+                            <div class="skill-tag-badge">React.js</div>
+                            <div class="skill-tag-badge">Bootstrap</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Backend & Mobile -->
+                    <div class="skills-category-card glass-card">
+                        <div class="category-header">
+                            <div class="category-icon icon-backend"><i class="fa-solid fa-cubes"></i></div>
+                            <h3>Mobile & Backend</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-tag-badge">Flutter</div>
+                            <div class="skill-tag-badge">Dart</div>
+                            <div class="skill-tag-badge">Java</div>
+                            <div class="skill-tag-badge">PHP</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Platforms & Tools -->
+                    <div class="skills-category-card glass-card">
+                        <div class="category-header">
+                            <div class="category-icon icon-tools"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                            <h3>Tools & Platforms</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-tag-badge">GitHub / Git</div>
+                            <div class="skill-tag-badge">VS Code</div>
+                            <div class="skill-tag-badge">Netlify</div>
+                            <div class="skill-tag-badge">Vercel</div>
+                            <div class="skill-tag-badge">Supabase</div>
+                            <div class="skill-tag-badge">XAMPP</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">03. Showcase</span>
+                    <h2 class="section-title">Projects & Designs</h2>
+                    <div class="title-underline"></div>
+                </div>
+                
+                <!-- Project Filter Navigation -->
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all" id="filter-all">All</button>
+                    <button class="filter-btn" data-filter="web" id="filter-web">Web Apps</button>
+                    <button class="filter-btn" data-filter="uiux" id="filter-uiux">UI/UX Design</button>
+                    <button class="filter-btn" data-filter="mobile" id="filter-mobile">Mobile Apps</button>
+                </div>
+                
+                <div class="projects-grid" id="projects-container">
+                    
+                    <!-- Project 1: Zynkly Hub (Web) -->
+                    <div class="project-card glass-card" data-category="web">
+                        <div class="project-img-wrapper">
+                            <div class="project-badge">React &amp; Netlify</div>
+                            <div class="project-overlay">
+                                <a href="https://zynkly-hub.netlify.app" target="_blank" rel="noopener" class="project-action-link" aria-label="Visit Zynkly Hub Website">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                                </a>
+                            </div>
+                            <!-- Styled Abstract SVG/Gradient instead of placeholder image -->
+                            <div class="project-graphic grad-1">
+                                <i class="fa-solid fa-rocket graphic-icon"></i>
+                                <span>Zynkly Hub</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Zynkly Hub</h3>
+                            <p class="project-desc">A modern React and JavaScript landing web application hosted on Netlify, featuring high-speed loading and responsive sections.</p>
+                            <div class="project-tags">
+                                <span>React</span>
+                                <span>JavaScript</span>
+                                <span>CSS Modules</span>
+                                <span>Netlify</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 2: Animated Navigation UI (UI/UX - FIGMA) -->
+                    <div class="project-card glass-card" data-category="uiux">
+                        <div class="project-img-wrapper">
+                            <div class="project-badge bg-figma"><i class="fa-brands fa-figma"></i> Figma Proto</div>
+                            <div class="project-overlay">
+                                <button class="project-action-link view-figma-btn" data-figma="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fjx4a48uMfqoi9hhdbNBdnz%2FNavigation%3Fnode-id%3D18-213%26scaling%3Dmin-zoom%26content-scaling%3Dfixed%26page-id%3D0%253A1%26viewport%3D-251%252C486%252C0.4" aria-label="Interact with Animated Navigation Prototype">
+                                    <i class="fa-solid fa-play"></i> Interactive Preview
+                                </button>
+                                <a href="https://www.figma.com/proto/jx4a48uMfqoi9hhdbNBdnz/Navigation?content-scaling=fixed&node-id=18-213&p=f&page-id=0%3A1&scaling=min-zoom&t=gXQOJCjYyzVlqrkn-1&viewport=-251%2C486%2C0.4" target="_blank" rel="noopener" class="project-action-link secondary-link" aria-label="Open Animated Navigation UI in Figma">
+                                    <i class="fa-brands fa-figma"></i> Figma Link
+                                </a>
+                            </div>
+                            <div class="project-graphic grad-2">
+                                <i class="fa-solid fa-compass graphic-icon"></i>
+                                <span>Navigation UI</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Animated Navigation UI</h3>
+                            <p class="project-desc">A premium navigation system prototype designed with complex motion behaviors and fluid spring animations inside Figma.</p>
+                            <div class="project-tags">
+                                <span>Figma</span>
+                                <span>Motion Design</span>
+                                <span>Interactive UI</span>
+                                <span>UX Flow</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 3: Weather Detection & Recommendation System (Web) -->
+                    <div class="project-card glass-card" data-category="web">
+                        <div class="project-img-wrapper">
+                            <div class="project-badge">Web API</div>
+                            <div class="project-graphic grad-3">
+                                <i class="fa-solid fa-cloud-sun-rain graphic-icon"></i>
+                                <span>Weather &amp; Recommendation</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Weather Detection &amp; Recommendation</h3>
+                            <p class="project-desc">An interactive website using OpenWeather API to detect client coordinates, display local forecasts, and recommend tasks.</p>
+                            <div class="project-tags">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                                <span>Weather API</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: Splash Screen Auto Navigation Animation (UI/UX - FIGMA) -->
+                    <div class="project-card glass-card" data-category="uiux">
+                        <div class="project-img-wrapper">
+                            <div class="project-badge bg-figma"><i class="fa-brands fa-figma"></i> Figma Proto</div>
+                            <div class="project-overlay">
+                                <button class="project-action-link view-figma-btn" data-figma="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FIlgywlG6Ru3HMv2byrwKI3%2FSplash-entry%3Fnode-id%3D17-19%26scaling%3Dscale-down%26content-scaling%3Dfixed%26page-id%3D0%253A1%26viewport%3D231%252C143%252C0.24" aria-label="Interact with Splash Screen Prototype">
+                                    <i class="fa-solid fa-play"></i> Interactive Preview
+                                </button>
+                                <a href="https://www.figma.com/proto/IlgywlG6Ru3HMv2byrwKI3/Splash-entry?content-scaling=fixed&node-id=17-19&p=f&page-id=0:1&scaling=scale-down&starting-point-node-id=4:8&t=DNLjyzqpruSq0lVh-1&viewport=231,143,0.24" target="_blank" rel="noopener" class="project-action-link secondary-link" aria-label="Open Splash Screen in Figma">
+                                    <i class="fa-brands fa-figma"></i> Figma Link
+                                </a>
+                            </div>
+                            <div class="project-graphic grad-4">
+                                <i class="fa-solid fa-clock graphic-icon"></i>
+                                <span>Splash Navigation</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Splash Screen Auto Navigation</h3>
+                            <p class="project-desc">A multi-stage splash screen that automatically triggers seamless transition overlays and guides the user inside the product environment.</p>
+                            <div class="project-tags">
+                                <span>Figma</span>
+                                <span>Auto-Layout</span>
+                                <span>Transitions</span>
+                                <span>Trigger Engine</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5: Mini Ola Application (Mobile - Flutter) -->
+                    <div class="project-card glass-card" data-category="mobile">
+                        <div class="project-img-wrapper">
+                            <div class="project-badge bg-mobile"><i class="fa-solid fa-mobile-screen"></i> Mobile App</div>
+                            <div class="project-graphic grad-5">
+                                <i class="fa-solid fa-taxi graphic-icon"></i>
+                                <span>Mini Ola App</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Mini Ola Application</h3>
+                            <p class="project-desc">A prototype of a ride-hailing application developed with Flutter, implementing live map mockups, cab selection drawers, and driver state metrics.</p>
+                            <div class="project-tags">
+                                <span>Flutter</span>
+                                <span>Dart</span>
+                                <span>Mobile UI</span>
+                                <span>State Management</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 6: Noise Audio Store – Web Design (UI/UX - FIGMA) -->
+                    <div class="project-card glass-card" data-category="uiux">
+                        <div class="project-img-wrapper">
+                            <div class="project-badge bg-figma"><i class="fa-brands fa-figma"></i> Figma Proto</div>
+                            <div class="project-overlay">
+                                <button class="project-action-link view-figma-btn" data-figma="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fjx4a48uMfqoi9hhdbNBdnz%2FNavigation%3Fnode-id%3D18-213%26scaling%3Dmin-zoom%26content-scaling%3Dfixed%26page-id%3D0%253A1%26viewport%3D-251%252C486%252C0.4" aria-label="Interact with Noise Audio Store Design">
+                                    <i class="fa-solid fa-play"></i> Interactive Preview
+                                </button>
+                                <a href="https://www.figma.com/proto/jx4a48uMfqoi9hhdbNBdnz/Navigation?content-scaling=fixed&node-id=18-213&p=f&page-id=0%3A1&scaling=min-zoom&t=gXQOJCjYyzVlqrkn-1&viewport=-251%2C486%2C0.4" target="_blank" rel="noopener" class="project-action-link secondary-link" aria-label="Open Noise Audio Store Prototype">
+                                    <i class="fa-brands fa-figma"></i> Figma Link
+                                </a>
+                            </div>
+                            <div class="project-graphic grad-6">
+                                <i class="fa-solid fa-headphones-simple graphic-icon"></i>
+                                <span>Noise Audio Store</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Noise Audio Store – Web Design</h3>
+                            <p class="project-desc">A premium e-commerce web storefront structure focusing on dark layouts, futuristic neon styling elements, and audio accessory categories.</p>
+                            <div class="project-tags">
+                                <span>Figma</span>
+                                <span>Web Layout</span>
+                                <span>Typography</span>
+                                <span>E-Commerce UX</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 7: Online Voting System (Web) -->
+                    <div class="project-card glass-card" data-category="web">
+                        <div class="project-img-wrapper">
+                            <div class="project-badge bg-backend">PHP &amp; XAMPP</div>
+                            <div class="project-graphic grad-7">
+                                <i class="fa-solid fa-check-to-slot graphic-icon"></i>
+                                <span>Online Voting System</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Online Voting System</h3>
+                            <p class="project-desc">A secure backend voting database portal featuring administrative dashboards, user authorization, and real-time voter statistics.</p>
+                            <div class="project-tags">
+                                <span>PHP</span>
+                                <span>Bootstrap</span>
+                                <span>MySQL</span>
+                                <span>XAMPP</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section (Printable & Interactive) -->
+        <section id="resume" class="section resume-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">04. Resume</span>
+                    <h2 class="section-title">My Qualifications</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="resume-actions-container">
+                    <p class="resume-intro-text">Interactive timeline of my academic background and achievements. You can also view or print the official resume format below.</p>
+                    <button onclick="window.print()" class="btn btn-primary print-resume-btn" id="btn-print-resume">
+                        <i class="fa-solid fa-print"></i>
+                        <span>Print / Save as PDF</span>
+                    </button>
+                </div>
+
+                <div class="resume-tabs-container">
+                    <div class="resume-tabs">
+                        <button class="resume-tab-btn active" data-tab="education" id="tab-education"><i class="fa-solid fa-user-graduate"></i> Education</button>
+                        <button class="resume-tab-btn" data-tab="certifications" id="tab-certs"><i class="fa-solid fa-certificate"></i> Certifications</button>
+                        <button class="resume-tab-btn" data-tab="workshops" id="tab-workshops"><i class="fa-solid fa-chalkboard-user"></i> Workshops &amp; Extra</button>
+                    </div>
+
+                    <!-- Education Tab Panel -->
+                    <div class="resume-tab-panel active" id="panel-education">
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">2023 - Present</div>
+                                <div class="timeline-content glass-card">
+                                    <h3>B.Tech – Information Technology</h3>
+                                    <h4 class="timeline-subtitle">Erode Sengunthar Engineering College, Perundurai</h4>
+                                    <p>Acquiring knowledge in core computing subjects, databases, web technologies, UI/UX systems design, and agile software development workflows.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">May 2023</div>
+                                <div class="timeline-content glass-card">
+                                    <h3>Higher Secondary Certificate (HSC)</h3>
+                                    <h4 class="timeline-subtitle">Carmel Boys Higher Secondary School, Nagercoil</h4>
+                                    <p>Completed secondary education with focused coursework in Physics, Chemistry, Mathematics, and Computer Science.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">May 2021</div>
+                                <div class="timeline-content glass-card">
+                                    <h3>SSLC</h3>
+                                    <h4 class="timeline-subtitle">St. Teresa's Matric Higher Secondary School, Vazhukkamparai</h4>
+                                    <p>Built a strong academic foundation with excellent grades in mathematics and core sciences.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Certifications Tab Panel -->
+                    <div class="resume-tab-panel" id="panel-certifications">
+                        <div class="certs-grid">
+                            <div class="cert-card glass-card">
+                                <div class="cert-icon"><i class="fa-solid fa-ribbon"></i></div>
+                                <div class="cert-details">
+                                    <h3>React Developer</h3>
+                                    <span class="cert-issuer">React.js Core Capabilities</span>
+                                </div>
+                            </div>
+                            <div class="cert-card glass-card">
+                                <div class="cert-icon"><i class="fa-solid fa-ribbon"></i></div>
+                                <div class="cert-details">
+                                    <h3>JavaScript</h3>
+                                    <span class="cert-issuer">ES6+ Programming Certification</span>
+                                </div>
+                            </div>
+                            <div class="cert-card glass-card">
+                                <div class="cert-icon"><i class="fa-solid fa-ribbon"></i></div>
+                                <div class="cert-details">
+                                    <h3>Figma for UI/UX Design</h3>
+                                    <span class="cert-issuer">Interactive Prototypes &amp; Design Systems</span>
+                                </div>
+                            </div>
+                            <div class="cert-card glass-card">
+                                <div class="cert-icon"><i class="fa-solid fa-ribbon"></i></div>
+                                <div class="cert-details">
+                                    <h3>Exploring the Relationship between UI and UX Design</h3>
+                                    <span class="cert-issuer">Human Centered Design</span>
+                                </div>
+                            </div>
+                            <div class="cert-card glass-card">
+                                <div class="cert-icon"><i class="fa-solid fa-ribbon"></i></div>
+                                <div class="cert-details">
+                                    <h3>HTML5 &amp; CSS3</h3>
+                                    <span class="cert-issuer">Responsive Web Architecture Certificate</span>
+                                </div>
+                            </div>
+                            <div class="cert-card glass-card">
+                                <div class="cert-icon"><i class="fa-solid fa-ribbon"></i></div>
+                                <div class="cert-details">
+                                    <h3>Python</h3>
+                                    <span class="cert-issuer">Foundational Scripting Certificate</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Workshops Tab Panel -->
+                    <div class="resume-tab-panel" id="panel-workshops">
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">2024</div>
+                                <div class="timeline-content glass-card">
+                                    <h3>DHRUVA 2024 Workshop Participation</h3>
+                                    <h4 class="timeline-subtitle">Karpagam College of Engineering</h4>
+                                    <p>Participated in practical developer seminars exploring upcoming trends in UI/UX systems design, tech stacks, and cloud service integration.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Print-Only Resume Component (Hidden in screen view, visible in Print preview) -->
+                <div class="print-resume-layout" id="print-resume-layout">
+                    <div class="print-resume-header">
+                        <h1>JAISON KUMAR J</h1>
+                        <p class="print-resume-title">Frontend Developer &amp; UI/UX Designer</p>
+                        <div class="print-resume-contact">
+                            <span><i class="fa-solid fa-phone"></i> +91 9578483173</span>
+                            <span><i class="fa-solid fa-envelope"></i> jaisonkumar.001@gmail.com</span>
+                            <span><i class="fa-brands fa-linkedin"></i> linkedin.com/in/jaison-kumar-j</span>
+                            <span><i class="fa-brands fa-github"></i> github.com/JAISON-J-01178/JAISON-J-01178</span>
+                        </div>
+                    </div>
+
+                    <div class="print-resume-grid">
+                        <div class="print-left-column">
+                            <div class="print-section">
+                                <h2>EDUCATION</h2>
+                                <div class="print-item">
+                                    <h3>B.Tech – Information Technology</h3>
+                                    <p class="print-item-sub">Erode Sengunthar Engineering College, Perundurai</p>
+                                    <p class="print-item-date">2023 – Present</p>
+                                </div>
+                                <div class="print-item">
+                                    <h3>Higher Secondary Certificate (HSC)</h3>
+                                    <p class="print-item-sub">Carmel Boys Higher Secondary School, Nagercoil</p>
+                                    <p class="print-item-date">May 2023</p>
+                                </div>
+                                <div class="print-item">
+                                    <h3>SSLC</h3>
+                                    <p class="print-item-sub">St. Teresa's Matric Higher Secondary School, Vazhukkamparai</p>
+                                    <p class="print-item-date">May 2021</p>
+                                </div>
+                            </div>
+
+                            <div class="print-section">
+                                <h2>SKILLS</h2>
+                                <div class="print-skills-group">
+                                    <h3>Web &amp; Frontend:</h3>
+                                    <p>HTML5, CSS3, JavaScript, React, Bootstrap</p>
+                                    <h3>Backend &amp; Mobile:</h3>
+                                    <p>Java, PHP, Dart, Flutter</p>
+                                    <h3>Design &amp; Tools:</h3>
+                                    <p>Figma, GitHub, VS Code, Netlify, Vercel, Supabase, XAMPP</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="print-right-column">
+                            <div class="print-section">
+                                <h2>PROJECTS</h2>
+                                <div class="print-item">
+                                    <h3>Zynkly Hub</h3>
+                                    <p class="print-item-sub">React, JavaScript, Netlify | zynkly-hub.netlify.app</p>
+                                    <p class="print-item-desc">Developed a responsive web page and component logic showcasing quick interface details, built using React.</p>
+                                </div>
+                                <div class="print-item">
+                                    <h3>Weather Detection &amp; Recommendation System</h3>
+                                    <p class="print-item-sub">HTML, CSS, JavaScript, Weather API</p>
+                                    <p class="print-item-desc">Created a client interface recommending schedules and activities based on real-time API weather data.</p>
+                                </div>
+                                <div class="print-item">
+                                    <h3>Online Voting System</h3>
+                                    <p class="print-item-sub">PHP, Bootstrap, XAMPP, MySQL</p>
+                                    <p class="print-item-desc">Designed an authenticated secure portal for online voting structures with admin panels.</p>
+                                </div>
+                                <div class="print-item">
+                                    <h3>Mini Ola Application</h3>
+                                    <p class="print-item-sub">Flutter, Dart</p>
+                                    <p class="print-item-desc">Engineered a mobile navigation booking display mockup for ride applications using Flutter widgets.</p>
+                                </div>
+                            </div>
+
+                            <div class="print-section">
+                                <h2>CERTIFICATIONS &amp; PARTICIPATION</h2>
+                                <p>• React Developer | JavaScript | HTML5 | CSS3 | Python</p>
+                                <p>• Exploring the Relationship between UI and UX Design | Figma for UI/UX Design</p>
+                                <p>• Workshop: DHRUVA 2024 – Karpagam College of Engineering</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">05. Connect</span>
+                    <h2 class="section-title">Get In Touch</h2>
+                    <div class="title-underline"></div>
+                </div>
+                
+                <div class="contact-grid">
+                    <!-- Contact Information Card -->
+                    <div class="contact-info-card glass-card">
+                        <h3>Let's Collaborate</h3>
+                        <p class="contact-subtitle-text">Have a project, a job opportunity, or just want to chat about UI/UX and web development? Reach out directly!</p>
+                        
+                        <div class="contact-links">
+                            <div class="contact-link-item">
+                                <div class="contact-icon-box"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="contact-text-box">
+                                    <span class="contact-label">Email Me</span>
+                                    <a href="mailto:jaisonkumar.001@gmail.com" class="contact-value">jaisonkumar.001@gmail.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-link-item">
+                                <div class="contact-icon-box"><i class="fa-solid fa-phone"></i></div>
+                                <div class="contact-text-box">
+                                    <span class="contact-label">Call / WhatsApp</span>
+                                    <a href="tel:+919578483173" class="contact-value">+91 9578483173</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-link-item">
+                                <div class="contact-icon-box"><i class="fa-brands fa-linkedin-in"></i></div>
+                                <div class="contact-text-box">
+                                    <span class="contact-label">LinkedIn Connection</span>
+                                    <a href="https://linkedin.com/in/jaison-kumar-j" target="_blank" rel="noopener" class="contact-value">linkedin.com/in/jaison-kumar-j</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-link-item">
+                                <div class="contact-icon-box"><i class="fa-brands fa-github"></i></div>
+                                <div class="contact-text-box">
+                                    <span class="contact-label">GitHub Repository</span>
+                                    <a href="https://github.com/JAISON-J-01178/JAISON-J-01178" target="_blank" rel="noopener" class="contact-value">github.com/JAISON-J-01178/JAISON-J-01178</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Form Card -->
+                    <div class="contact-form-card glass-card">
+                        <h3>Send A Message</h3>
+                        
+                        <!-- Web3Forms Integration -->
+                        <form id="contact-form" class="contact-form">
+                            <!-- Web3Forms Access Key - Setup placeholder -->
+                            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" id="web3forms-key">
+                            <input type="hidden" name="subject" value="New Portfolio Contact Form Submission">
+                            <!-- Honeypot Spam Protection -->
+                            <input type="checkbox" name="botcheck" class="hidden-honeypot" style="display: none;">
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="form-name">Name</label>
+                                    <input type="text" id="form-name" name="name" required placeholder="John Doe">
+                                </div>
+                                <div class="form-group">
+                                    <label for="form-email">Email Address</label>
+                                    <input type="email" id="form-email" name="email" required placeholder="john@example.com">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="form-subject">Subject</label>
+                                <input type="text" id="form-subject" name="subject_line" required placeholder="How can I help you?">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="form-message">Message</label>
+                                <textarea id="form-message" name="message" rows="5" required placeholder="Hello Jaison, I would love to talk about..."></textarea>
+                            </div>
+
+                            <!-- Alert Box for success/error messages -->
+                            <div class="form-message-alert" id="form-alert"></div>
+                            
+                            <button type="submit" class="btn btn-primary btn-block submit-btn" id="btn-submit-form">
+                                <span>Send Message</span>
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </form>
+
+                        <!-- Instruction for web3forms token generation -->
+                        <div class="web3forms-helper-text">
+                            <i class="fa-solid fa-circle-info"></i>
+                            <span>Let's Work Together Ready to collaborate? Send me a message and let's create innovative digital experiences together. Your message will be delivered directly to my email, and I'll respond as soon as possible.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="site-footer">
+        <div class="container footer-container">
+            <p class="copyright-text">&copy; 2026 Jaison Kumar J. All rights reserved.</p>
+            <p class="credit-text">Designed &amp; Developed with <i class="fa-solid fa-heart heart-icon"></i></p>
+        </div>
+    </footer>
+
+    <!-- Figma Prototype Modal Layer -->
+    <div class="figma-modal" id="figma-modal">
+        <div class="figma-modal-overlay"></div>
+        <div class="figma-modal-content">
+            <div class="figma-modal-header">
+                <h3 id="figma-modal-title">Figma Prototype Viewer</h3>
+                <button class="figma-modal-close" aria-label="Close prototype viewer" id="btn-close-figma">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="figma-iframe-container">
+                <div class="figma-spinner"><i class="fa-solid fa-circle-notch fa-spin"></i> Loading Interactive Prototype...</div>
+                <iframe id="figma-iframe" src="" allowfullscreen></iframe>
+            </div>
+            <div class="figma-modal-footer">
+                <a href="#" target="_blank" rel="noopener" id="figma-external-link" class="btn btn-secondary btn-sm">
+                    <i class="fa-solid fa-up-right-from-square"></i> Open in Figma
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script Injection -->
+    <script src="script.js"></script>
+</body>
+</html>
